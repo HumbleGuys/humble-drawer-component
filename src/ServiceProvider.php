@@ -8,7 +8,7 @@ class ServiceProvider extends SupportServiceProvider
 {
     public function register(): void
     {
-        $this->loadViewsFrom(__DIR__, 'drawer');
+        $this->loadViewsFrom(__DIR__.'/resources', 'drawer');
     }
 
     public function boot(): void
