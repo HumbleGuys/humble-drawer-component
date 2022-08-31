@@ -14,13 +14,17 @@ const drawer = ({ id, activeBodyClass, defaultOpen = false }) => ({
                 if (activeBodyClass) {
                     document.body.classList.add(activeBodyClass);
                 }
-            } else {
+
+                this.$dispatch('opened');
+            } else if(!this.$store.drawer.id && this.isOpen) {
                 this.isOpen = false;
                 document.body.style.overflow = '';
 
                 if (activeBodyClass) {
                     document.body.classList.remove(activeBodyClass);
                 }
+
+                this.$dispatch('closed');
             }
         });
 

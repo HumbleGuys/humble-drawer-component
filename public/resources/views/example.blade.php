@@ -5,6 +5,12 @@
         active-body-class="right-drawer-is-open"
         class="rightDrawer"
         :default-open="false"
+        @opened="function () {
+            console.log('opened event triggered')
+        }"
+        @closed="function () {
+            console.log('closed event trigged')
+        }"
     >
         <x-drawer::backdrop class="rightDrawer__backdrop" />
 
