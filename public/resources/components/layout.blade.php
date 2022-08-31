@@ -25,6 +25,10 @@
                     -moz-osx-font-smoothing: grayscale;
                     font-size: 1.8rem;
                 }
+
+                [x-cloak] {
+                    display: none
+                }
         </style>
 
         @vite(['src/resources/index.css', 'src/resources/index.js'])

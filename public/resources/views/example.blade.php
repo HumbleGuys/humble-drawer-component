@@ -1,6 +1,4 @@
 <x-layout>
-    Drawer
-
     <x-drawer::base 
         name="right"
         placement="right"    

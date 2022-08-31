@@ -1,6 +1,7 @@
 .drawer {
     --innerWidth: 50rem;
     --innerPadding: 5rem;
+    --transtionDuration: 0.35s;
 
     position: fixed;
     top: 0;
@@ -17,6 +18,7 @@
     height: 100%;
     background-color: #000;
     opacity: 0.5;
+    transition: var(--transtionDuration);
 }
 
 .drawer__inner {
@@ -27,6 +29,7 @@
     overflow: auto;
     -webkit-overflow-scrolling: touch;
     padding: var(--innerPadding);
+    transition: var(--transtionDuration);
 }
 
 .drawer.right .drawer__inner {
@@ -53,4 +56,34 @@
     left: 0;
     width: 100%;
     height: auto;
+}
+
+.drawer-enter,
+.drawer-leave {
+    transition: var(--transtionDuration);
+}
+
+.drawer-enter-start .drawer__backdrop,
+.drawer-leave-end .drawer__backdrop {
+    opacity: 0;
+}
+
+.drawer-enter-start.right .drawer__inner,
+.drawer-leave-end.right .drawer__inner {
+    transform: translateX(100%);
+}
+
+.drawer-enter-start.left .drawer__inner,
+.drawer-leave-end.left .drawer__inner {
+    transform: translateX(-100%);
+}
+
+.drawer-enter-start.top .drawer__inner,
+.drawer-leave-end.top .drawer__inner {
+    transform: translateY(-100%);
+}
+
+.drawer-enter-start.bottom .drawer__inner,
+.drawer-leave-end.bottom .drawer__inner {
+    transform: translateY(100%);
 }

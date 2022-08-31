@@ -1,6 +1,6 @@
 @props([
     'name',
-    'transitionName' => null,
+    'transitionName' => 'drawer',
     'activeBodyClass' => '',
     'defaultOpen' => false,
     'placement' => 'right'
@@ -12,7 +12,14 @@
         activeBodyClass: '{{ $activeBodyClass }}',
         defaultOpen: {{ json_encode($defaultOpen) }}
     })"
+    x-transition:enter="{{ $transitionName }}-enter"
+    x-transition:enter-start="{{ $transitionName }}-enter-start"
+    x-transition:enter-end="{{ $transitionName }}-enter-end"
+    x-transition:leave="{{ $transitionName }}-leave"
+    x-transition:leave-start="{{ $transitionName }}-leave-start"
+    x-transition:leave-end="{{ $transitionName }}-leave-end"
     x-show="isOpen"
+    id="{{ $name }}"
     class="drawer {{ $placement }}"
     role="region"
     tabindex="-1"
