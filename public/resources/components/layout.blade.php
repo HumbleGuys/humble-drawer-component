@@ -26,6 +26,16 @@
                     font-size: 1.8rem;
                 }
 
+                button {
+                    cursor: pointer;
+                    background-color: transparent;
+                    padding: 0;
+                    text-decoration: none;
+                    color: inherit;
+                    box-shadow: none;
+                    border: 0
+                }
+
                 [x-cloak] {
                     display: none
                 }

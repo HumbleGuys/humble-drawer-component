@@ -12,9 +12,7 @@
             class="rightDrawer__inner"
             style="background-color: #fff"
         >
-            <x-drawer::closeButton>
-                Close
-            </x-drawer::closeButton>
+            <x-drawer::closeButton class="rightDrawer__closeButton" />
 
             Right
         </x-drawer::inner>
@@ -27,6 +25,10 @@
         <x-drawer::backdrop />
 
         <x-drawer::inner style="background-color: #fff">
+            <x-drawer::closeButton class="rightDrawer__closeButton">
+                Stäng
+            </x-drawer::closeButton>
+
             Left
         </x-drawer::inner>
     </x-drawer::base>

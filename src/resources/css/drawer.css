@@ -4,6 +4,9 @@
     --transtionDuration: 0.35s;
     --backdropColor: #000;
     --backdropOpacity: 0.6;
+    --closeButtonSize: 2.4rem;
+    --closeButtonTopPositon: 2rem;
+    --closeButtonRightPositon: 2rem;
 
     position: fixed;
     top: 0;
@@ -58,6 +61,20 @@
     left: 0;
     width: 100%;
     height: auto;
+}
+
+.drawer__closeButton {
+    display: block;
+    position: absolute;
+    top: var(--closeButtonTopPositon);
+    right: var(--closeButtonRightPositon);
+    width: var(--closeButtonSize);
+    height: var(--closeButtonSize);
+}
+
+.drawer__closeIcon {
+    width: 100%;
+    height: 100%;
 }
 
 .drawer-enter,
