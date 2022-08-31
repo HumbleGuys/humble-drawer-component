@@ -4,6 +4,7 @@
         placement="right"
         active-body-class="right-drawer-is-open"
         class="rightDrawer"
+        :default-open="false"
     >
         <x-drawer::backdrop class="rightDrawer__backdrop" />
 
@@ -11,6 +12,10 @@
             class="rightDrawer__inner"
             style="background-color: #fff"
         >
+            <x-drawer::closeButton>
+                Close
+            </x-drawer::closeButton>
+
             Right
         </x-drawer::inner>
     </x-drawer::base>
