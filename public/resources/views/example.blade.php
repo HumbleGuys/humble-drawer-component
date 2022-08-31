@@ -8,10 +8,7 @@
     >
         <x-drawer::backdrop class="rightDrawer__backdrop" />
 
-        <x-drawer::inner 
-            class="rightDrawer__inner"
-            style="background-color: #fff"
-        >
+        <x-drawer::inner class="rightDrawer__inner">
             <x-drawer::closeButton class="rightDrawer__closeButton" />
 
             Right
@@ -24,9 +21,9 @@
     >
         <x-drawer::backdrop />
 
-        <x-drawer::inner style="background-color: #fff">
-            <x-drawer::closeButton class="rightDrawer__closeButton">
-                Stäng
+        <x-drawer::inner>
+            <x-drawer::closeButton>
+                X
             </x-drawer::closeButton>
 
             Left
@@ -39,7 +36,7 @@
     >
         <x-drawer::backdrop />
 
-        <x-drawer::inner style="background-color: #fff">
+        <x-drawer::inner>
             Top
         </x-drawer::inner>
     </x-drawer::base>
@@ -50,11 +47,22 @@
     >
         <x-drawer::backdrop />
 
-        <x-drawer::inner style="background-color: #fff">
+        <x-drawer::inner>
             Bottom
         </x-drawer::inner>
     </x-drawer::base>
 
+    <x-drawer::base 
+        name="customTrans"
+        transition-name="customTrans"
+        placement="right"    
+    >
+        <x-drawer::backdrop />
+
+        <x-drawer::inner>
+            Custom transition
+        </x-drawer::inner>
+    </x-drawer::base>
 
     <div>
         <button 
@@ -89,6 +97,15 @@
             x-data    
         >
             show bottom
+        </button>
+    </div>
+
+    <div>
+        <button 
+            @click="$store.drawer.toggle('customTrans')"
+            x-data    
+        >
+            show custom transition
         </button>
     </div>
 </x-layout>

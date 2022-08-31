@@ -1,4 +1,5 @@
 .drawer {
+    --innerBackgroundColor: #fff;
     --innerWidth: 50rem;
     --innerPadding: 5rem;
     --transtionDuration: 0.35s;
@@ -27,6 +28,7 @@
 }
 
 .drawer__inner {
+    background-color: var(--innerBackgroundColor);
     position: absolute;
     max-width: 100%;
     height: 100%;
