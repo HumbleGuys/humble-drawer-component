@@ -36,6 +36,10 @@
                     border: 0
                 }
 
+                * {
+                    box-sizing: border-box;
+                }
+
                 [x-cloak] {
                     display: none
                 }
