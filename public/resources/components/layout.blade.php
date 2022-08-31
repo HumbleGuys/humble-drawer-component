@@ -5,6 +5,28 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Drawer component</title>
 
+        <style>
+            html,
+                body {
+                    height: 100%;
+                    margin: 0;
+                    padding: 0;
+                }
+
+                html {
+                    font-size: 10px;
+                }
+
+                body {
+                    font-weight: 400;
+                    color: #000;
+                    background-color: #fff;
+                    -webkit-font-smoothing: antialiased;
+                    -moz-osx-font-smoothing: grayscale;
+                    font-size: 1.8rem;
+                }
+        </style>
+
         @vite(['src/resources/index.css', 'src/resources/index.js'])
 
         <script defer src="https://unpkg.com/alpinejs@3.10.3/dist/cdn.min.js"></script>
