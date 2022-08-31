@@ -2,11 +2,15 @@
     <x-drawer::base 
         name="right"
         placement="right"
-        active-body-class="right-drawer-is-open"   
+        active-body-class="right-drawer-is-open"
+        class="rightDrawer"
     >
-        <x-drawer::backdrop />
+        <x-drawer::backdrop class="rightDrawer__backdrop" />
 
-        <x-drawer::inner style="background-color: #fff">
+        <x-drawer::inner 
+            class="rightDrawer__inner"
+            style="background-color: #fff"
+        >
             Right
         </x-drawer::inner>
     </x-drawer::base>

@@ -20,7 +20,7 @@
     x-transition:leave-end="{{ $transitionName }}-leave-end"
     x-show="isOpen"
     id="{{ $name }}"
-    class="drawer {{ $placement }}"
+    {{ $attributes->merge(['class' => "drawer placement-{$placement}"]) }}
     role="region"
     tabindex="-1"
     x-cloak
