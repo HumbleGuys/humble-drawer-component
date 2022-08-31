@@ -48,20 +48,23 @@ const drawer = ({ id, activeBodyClass, defaultOpen = false }) => ({
     }
 });
 
-window.Alpine.data('drawer', drawer);
+document.addEventListener('alpine:init', () => {
+    window.Alpine.data('drawer', drawer);
 
-window.Alpine.store('drawer', {
-    id: null,
+    window.Alpine.store('drawer', {
+        id: null,
+    
+        toggle (id) {
+            this.id = this.id === id ? null : id;
+        },
+    
+        open (id) {
+            this.id = id;
+        },
+    
+        close () {
+            this.id = null;
+        }
+    });
+})
 
-    toggle (id) {
-        this.id = this.id === id ? null : id;
-    },
-
-    open (id) {
-        this.id = id;
-    },
-
-    close () {
-        this.id = null;
-    }
-});

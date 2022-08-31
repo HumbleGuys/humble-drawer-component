@@ -22,7 +22,7 @@
 
 @once
     @push('head')
-        <link rel="stylesheet" href="{{ asset('../vendor/humble-guys/humble-drawer-component/src/resources/css/drawer.css') }}">
-        <script module defer src="{{ asset('../vendor/humble-guys/humble-drawer-component/src/resources/js/drawer.js') }}"></script>
+        <link rel="stylesheet" href="{{ asset('../vendor/humble-guys/humble-drawer-component/public/resources/dist/assets/index.c8fd9a66.css') }}">
+        <script module defer src="{{ asset('../vendor/humble-guys/humble-drawer-component/public/resources/dist/assets/index.212d43d8.js') }}"></script>
     @endpush   
 @endonce 

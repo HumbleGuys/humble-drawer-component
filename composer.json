@@ -13,11 +13,13 @@
         }
     ],
     "require": {
-        "php": "^8.1"
+        "php": "^8.1",
+        "humble-guys/humble-core": "dev-main"
     },
     "require-dev": {
         "laravel/pint": "^0.2.3"
     },
+    "minimum-stability": "dev",
     "config": {
         "allow-plugins": {
             "pestphp/pest-plugin": true
