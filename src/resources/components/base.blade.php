@@ -2,7 +2,8 @@
     'name',
     'transitionName' => null,
     'activeBodyClass' => '',
-    'defaultOpen' => false
+    'defaultOpen' => false,
+    'placement' => 'right'
 ])
 
 <div
@@ -12,7 +13,7 @@
         defaultOpen: {{ json_encode($defaultOpen) }}
     })"
     x-show="isOpen"
-    class="drawer"
+    class="drawer {{ $placement }}"
     role="region"
     tabindex="-1"
     x-cloak
