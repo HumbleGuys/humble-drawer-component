@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "b08f4791e16d66ede4e9acbb791c1115",
+    "content-hash": "cd89141d192bc4230a0628a8708f91ad",
     "packages": [
         {
             "name": "brick/math",
@@ -695,16 +695,16 @@
         },
         {
             "name": "humble-guys/humble-core",
-            "version": "dev-main",
+            "version": "0.0.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/HumbleGuys/humble-core.git",
-                "reference": "1a877458b5e01e39bce8d5d3f496e9882dec487d"
+                "reference": "3cbe7a39c1ad8f17733cc478389a7e624e79459c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/HumbleGuys/humble-core/zipball/1a877458b5e01e39bce8d5d3f496e9882dec487d",
-                "reference": "1a877458b5e01e39bce8d5d3f496e9882dec487d",
+                "url": "https://api.github.com/repos/HumbleGuys/humble-core/zipball/3cbe7a39c1ad8f17733cc478389a7e624e79459c",
+                "reference": "3cbe7a39c1ad8f17733cc478389a7e624e79459c",
                 "shasum": ""
             },
             "require": {
@@ -734,7 +734,6 @@
                 "pestphp/pest": "^1.21",
                 "phpstan/phpstan": "^1.8"
             },
-            "default-branch": true,
             "type": "library",
             "autoload": {
                 "files": [
@@ -753,9 +752,9 @@
             ],
             "support": {
                 "issues": "https://github.com/HumbleGuys/humble-core/issues",
-                "source": "https://github.com/HumbleGuys/humble-core/tree/main"
+                "source": "https://github.com/HumbleGuys/humble-core/tree/0.0.1"
             },
-            "time": "2022-08-31T06:58:30+00:00"
+            "time": "2022-08-31T12:28:50+00:00"
         },
         {
             "name": "illuminate/bus",
@@ -3102,12 +3101,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/http-foundation.git",
-                "reference": "2c034cff26ef148d04a200c87543b209a6400e95"
+                "reference": "0de8afb3ff31d8ce244e0c68f1fddd6b90ece937"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/http-foundation/zipball/2c034cff26ef148d04a200c87543b209a6400e95",
-                "reference": "2c034cff26ef148d04a200c87543b209a6400e95",
+                "url": "https://api.github.com/repos/symfony/http-foundation/zipball/0de8afb3ff31d8ce244e0c68f1fddd6b90ece937",
+                "reference": "0de8afb3ff31d8ce244e0c68f1fddd6b90ece937",
                 "shasum": ""
             },
             "require": {
@@ -3169,7 +3168,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2022-08-26T15:23:18+00:00"
+            "time": "2022-08-31T08:35:54+00:00"
         },
         {
             "name": "symfony/http-kernel",
@@ -3177,12 +3176,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/http-kernel.git",
-                "reference": "a82180520acc2949e17619f7d24469bdf8b8ccd0"
+                "reference": "932e3c85b576197245a2607c64ae469a6825fd05"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/http-kernel/zipball/a82180520acc2949e17619f7d24469bdf8b8ccd0",
-                "reference": "a82180520acc2949e17619f7d24469bdf8b8ccd0",
+                "url": "https://api.github.com/repos/symfony/http-kernel/zipball/932e3c85b576197245a2607c64ae469a6825fd05",
+                "reference": "932e3c85b576197245a2607c64ae469a6825fd05",
                 "shasum": ""
             },
             "require": {
@@ -3280,7 +3279,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2022-08-26T15:23:18+00:00"
+            "time": "2022-08-31T08:58:08+00:00"
         },
         {
             "name": "symfony/mime",
@@ -3288,12 +3287,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/mime.git",
-                "reference": "4a469e50a1ec92c400167dd385cee5b1778a8e72"
+                "reference": "57158889431ba0ca427e5d65bb0b44bfd808f103"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/mime/zipball/4a469e50a1ec92c400167dd385cee5b1778a8e72",
-                "reference": "4a469e50a1ec92c400167dd385cee5b1778a8e72",
+                "url": "https://api.github.com/repos/symfony/mime/zipball/57158889431ba0ca427e5d65bb0b44bfd808f103",
+                "reference": "57158889431ba0ca427e5d65bb0b44bfd808f103",
                 "shasum": ""
             },
             "require": {
@@ -3362,7 +3361,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2022-08-25T15:27:04+00:00"
+            "time": "2022-08-31T08:35:54+00:00"
         },
         {
             "name": "symfony/polyfill-ctype",
@@ -4751,9 +4750,7 @@
     ],
     "aliases": [],
     "minimum-stability": "dev",
-    "stability-flags": {
-        "humble-guys/humble-core": 20
-    },
+    "stability-flags": [],
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": {

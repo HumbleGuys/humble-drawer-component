@@ -14,7 +14,7 @@
     ],
     "require": {
         "php": "^8.1",
-        "humble-guys/humble-core": "dev-main"
+        "humble-guys/humble-core": "0.0.*"
     },
     "require-dev": {
         "laravel/pint": "^0.2.3"
