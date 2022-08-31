@@ -1,7 +1,8 @@
 <x-layout>
     <x-drawer::base 
         name="right"
-        placement="right"    
+        placement="right"
+        active-body-class="right-drawer-is-open"   
     >
         <x-drawer::backdrop />
 
