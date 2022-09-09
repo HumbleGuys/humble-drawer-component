@@ -30,7 +30,7 @@
 
 @once
     @push('head')
-        <link rel="stylesheet" href="{{ asset('../vendor/humble-guys/humble-drawer-component/public/resources/dist/assets/index.4207d6ee.css') }}">
-        <script module defer src="{{ asset('../vendor/humble-guys/humble-drawer-component/public/resources/dist/assets/index.8d4b306d.js') }}"></script>
+        <link rel="stylesheet" href="{{ asset('../vendor/humble-guys/humble-drawer-component/public/resources/dist/style.css?v=0.0.3') }}">
+        <script module defer src="{{ asset('../vendor/humble-guys/humble-drawer-component/public/resources/dist/humble-drawer-component.umd.js?v=0.0.3') }}"></script>
     @endpush   
 @endonce 

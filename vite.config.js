@@ -8,6 +8,13 @@ export default defineConfig(({ command }) => {
         build: {
             manifest: true,
             outDir: 'public/resources/dist',
+
+            lib: {
+                name: "humble-drawer-component",
+                entry: 'src/resources/index.js',
+                fileName: 'humble-drawer-component'
+            },
+
             rollupOptions: {
                 input: 'src/resources/index.js'
             }
